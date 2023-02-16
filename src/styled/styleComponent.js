@@ -39,5 +39,3 @@ export const Title = styled.div`
 export const DashCard = styled(SignCard)`
     border-color: #969696;
 `
-
-
