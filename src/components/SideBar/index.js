@@ -1,11 +1,11 @@
 import React from "react";
-import Dropdown from "./DropDown";
-import { StyleSideBar } from "./Style";
-import Logo from "../Logo"
+import Dropdown from "../DropDown";
+import { StyleSideBar } from "./styled";
+import Logo from "../Logo";
 const SideBar = () => {
   return (
     <StyleSideBar>
-      <Logo body="LOGO HERE"/>
+      <Logo body="LOGO HERE" />
       <ul>
         <li>Dashboard</li>
         <li>Company details</li>

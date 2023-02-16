@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { SlArrowDown } from "react-icons/sl";
-import { DropdownStyle, StyledArrow } from "./Style";
+import { DropdownStyle, StyledArrow } from "./styled";
 
 const Dropdown = (props) => {
-  
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [open, setOpen] = useState(false);
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Avatar from '../Avatar'
-import { StyleHeader } from './Style'
+import { StyleHeader } from './styled'
 
 const Header = (props) => {
   return (

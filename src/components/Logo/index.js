@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleLogo } from "./Style";
+import { StyleLogo } from "./styled";
 
 const index = (props) => {
   return (
