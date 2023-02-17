@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { AuthContext } from "./context";
-
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
   useEffect(() => {
-    localStorage.getItem('token')&&setAuthenticated(true);
+    localStorage.getItem("token") && setAuthenticated(true);
   }, []);
   return (
   <AuthContext.Provider value={[ authenticated , setAuthenticated]}>
