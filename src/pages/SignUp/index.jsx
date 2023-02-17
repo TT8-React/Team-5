@@ -116,7 +116,7 @@ const SignUp = () => {
                         <MainButton>SignUp</MainButton>
                         {formState.error?.isAxiosError && <ErrorForm>{formState.error?.isAxiosError}</ErrorForm>}
                     </form>
-                    <SignParagraph p="Already have an account ?" link="Login" path="Login" />
+                    <SignParagraph p="Already have an account ?" link="Login" path="/" />
                 </SignCard>
             </LogInStyled>
         </Container>

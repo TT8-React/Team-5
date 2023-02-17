@@ -6,7 +6,7 @@ import {
   StyledDetailName,
   StyledDetailsBox,
   StyledDetailsPage,
-} from "./StyledCompanyDetails";
+} from "./Styled";
 
 // import  Global Styled Components
 import {
