@@ -5,7 +5,7 @@ import { ACTIONS } from '../../Action';
 import { API } from '../../API';
 import ErrorForm from '../../components/ErrorForm';
 import Input from '../../components/InputBox'
-import Loading from '../../Components/Loading';
+import Loading from '../../components/Loading';
 import SignParagraph from '../../components/SignParagraph';
 import { AuthContext } from '../../context';
 import { Container, MainButton, SignCard, Title } from '../../styled/styleComponent'
@@ -40,7 +40,7 @@ const reducer = (state, action) => {
 };
 const LogIn = () => {
     const [formState, dispatch] = useReducer(reducer, initialState);
-    const [, setIsAuthenticated] = useContext(AuthContext);
+    const [test, setIsAuthenticated] = useContext(AuthContext);
     const handleInputChange = (event) => {
         const { id, value } = event.target;
         dispatch({ type: ACTIONS.HANDLE_INPUT_CHANGE, id, value });
@@ -59,7 +59,9 @@ const LogIn = () => {
             });
             if (res.data) {
                 localStorage.setItem('token', res.data.token);
+                console.log(test)
                 setIsAuthenticated(true)
+                console.log(test)
             }
         } catch (error) {
             if (error.isAxiosError) {
@@ -108,7 +110,7 @@ const LogIn = () => {
                         <MainButton>LOG IN</MainButton>
                             {formState.error?.isAxiosError && <ErrorForm>{formState.error?.isAxiosError}</ErrorForm>}
                     </form> 
-                    <SignParagraph p="Don’t have an account ?"link="Sign up"path="Signup"/>
+                    <SignParagraph p="Don’t have an account ?"link="Sign up"path="/Signup"/>
                 </SignCard>
             </LogInStyled>
         </Container>
