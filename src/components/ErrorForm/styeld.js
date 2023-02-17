@@ -7,4 +7,5 @@ export const ErrorStyled = styled.p`
         padding: 5px 0;
         border-radius: 5px;
         text-align: center;
+        max-width:360px;
 `
