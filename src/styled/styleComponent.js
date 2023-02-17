@@ -30,7 +30,7 @@ export const SignCard = styled.div`
     border: 1px solid #000000;
     border-radius: 30px;
 `
-export const Title = styled.div`
+export const Title = styled.h2`
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;

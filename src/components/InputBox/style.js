@@ -4,25 +4,22 @@ export const Label = styled.label `
     display: block;
     font-weight: 500;
     font-size: 16px;
-    color: ${(props)=>props.theme.palette.font};
+    color: #52525C;
     margin-top: 10px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: ${(props) => props.theme.fontSizes.body}rem;
+    font-size: 15px;
     letter-spacing: -0.2px;
-    color: ${(props)=>props.theme.palette.ColorApp.dark};
 `
 export const InputStyled = styled.input `
     width: 100%;
     height: 40px;
-    border: 1px solid ${(props)=>props.theme.palette.ColorApp.gray_300};
-    border-radius: 6px;
+    border: 2px solid #D9D9D9;
+    border-radius: 8px;
     font-weight: 500;
-    font-size: ${(props) => props.theme.fontSizes.body2}rem;
-    line-height: 17px;
-    /* identical to box height */
-    color: ${(props)=>props.theme.palette.ColorApp.gray_500};
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
     background-color:transparent;
     padding: 10px; 
     margin: 3px 0 10px;

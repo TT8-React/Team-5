@@ -1,8 +1,15 @@
-import Header from "./components/Header";
-import SideBar from "./components/SideBar";
-
+import { useEffect, useState } from "react";
+import { AuthContext } from "./context";
 function App() {
-  return <div className="App"></div>;
+  const [authenticated, setAuthenticated] = useState(false);
+  useEffect(() => {
+    localStorage.getItem('token')&&setAuthenticated(true);
+  }, []);
+  return (
+  <AuthContext.Provider value={[ authenticated , setAuthenticated]}>
+    {/* put the Routes here */}
+  </AuthContext.Provider>
+  )
 }
 
 export default App;
