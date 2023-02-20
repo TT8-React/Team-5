@@ -4,8 +4,9 @@ import { StyleSideBar } from "./styled";
 import Logo from "../Logo";
 import { MainButton } from "../../styled/styleComponent";
 import { AuthContext } from "../../context";
+import { Link } from "react-router-dom";
 const SideBar = () => {
-  const [, setAuthenticated ] = useContext(AuthContext);
+  const [, setAuthenticated] = useContext(AuthContext);
   return (
     <StyleSideBar>
       <Logo body="LOGO HERE" />
@@ -15,7 +16,12 @@ const SideBar = () => {
         <li>
           <Dropdown title="Report">
             <ul>
-              <li>My Report</li>
+              <Link to="/Home/Report">
+                <li>Report</li>
+              </Link>
+              <Link to="/Home/MyReport">
+                <li>My Report</li>
+              </Link>
             </ul>
           </Dropdown>
         </li>
@@ -30,10 +36,14 @@ const SideBar = () => {
           </Dropdown>
         </li>
         <li>
-          <MainButton onClick={()=>{
-            setAuthenticated(false);
-            localStorage.removeItem('token');
-          }}>logout</MainButton>
+          <MainButton
+            onClick={() => {
+              setAuthenticated(false);
+              localStorage.removeItem("token");
+            }}
+          >
+            logout
+          </MainButton>
         </li>
       </ul>
     </StyleSideBar>
