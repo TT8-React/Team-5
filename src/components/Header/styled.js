@@ -13,5 +13,6 @@ export const StyleHeader = styled.header`
     font-size: 23px;
     line-height: 28px;
     color: #ffffff;
+    margin-left: 26px;
   }
 `;
