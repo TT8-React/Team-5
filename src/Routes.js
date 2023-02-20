@@ -29,7 +29,6 @@ const MyRoutes = () => {
         <Route path="ProfileDetails" element={<ProfileDetails />} />
         <Route path="Report" element={<Report />} />
         <Route path="MyReport" element={<MyReport />} />
-        <Route path="*" element={<Layout />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
       <Route path="/*" element={<PageNotFound />} />
