@@ -9,7 +9,7 @@ export const StyleAvatar = styled.div`
     top:0;
     left:0;
     width:100%;
-    height:100%;
+    height:115vh;
     background-color:#00000052
   }
   `
@@ -38,7 +38,6 @@ export const StyleAvatar = styled.div`
       align-items: center;
       border-radius: 5px;
       z-index: 10;
-
       &::before {
         position: absolute;
         content: "";
