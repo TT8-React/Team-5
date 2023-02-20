@@ -5,7 +5,6 @@ export const StyleHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  width: 80vw;
   height: 91px;
   background: #4f4f4f;
   h2 {
