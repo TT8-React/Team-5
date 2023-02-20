@@ -22,7 +22,7 @@ function MyReport() {
             {myReport.map((item) => {
               return (
                 <Input
-                  key={item.key}
+                  key={item.id}
                   id={item.id}
                   label={item.label}
                   type={item.type}
