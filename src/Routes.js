@@ -7,6 +7,7 @@ import LogIn from "./pages/LogIn"
 import CompanyDetails from "./pages/CompanyDetails"
 import ProfileDetails from "./pages/ProfileDetails"
 import PrivateRoute from "./PriveteRoutes"
+import Layout from "./components/Layout/Layout"
 
 const MyRoutes = ()=>{
     const [ isAuthenticated,  ] = useContext(AuthContext);
@@ -18,6 +19,7 @@ const MyRoutes = ()=>{
           <Route path="/Home" element={<PrivateRoute/>}>
             <Route index element={<CompanyDetails/>} />
             <Route path="ProfileDetails" element={<ProfileDetails/>} />
+            <Route path="*" element={<Layout/>} />
             <Route path="*" element={<PageNotFound/>} />
           </Route>
             <Route path="/*" element={<PageNotFound/>} />
