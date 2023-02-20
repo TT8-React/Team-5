@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const StyleSideBar = styled.div`
   background-color: #efefef;
-  width: 270px;
+  width: 20vw;
+  min-height: 100vh;
   padding: 41px;
   display: flex;
   align-items: flex-start;

@@ -7,10 +7,10 @@ function App() {
     localStorage.getItem("token") && setAuthenticated(true);
   }, []);
   return (
-  <AuthContext.Provider value={[ authenticated , setAuthenticated]}>
-    <MyRoutes/>
-  </AuthContext.Provider>
-  )
+    <AuthContext.Provider value={[authenticated, setAuthenticated]}>
+      <MyRoutes />
+    </AuthContext.Provider>
+  );
 }
 
 export default App;
