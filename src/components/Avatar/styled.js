@@ -5,7 +5,7 @@ export const StyleAvatar = styled.div`
   `
     ::after{
     content:"";
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     width:100%;
@@ -41,7 +41,7 @@ export const StyleAvatar = styled.div`
       &::before {
         position: absolute;
         content: "";
-        border-width: 5px 5px 5px 5px;
+        border-width: 5px;
         border-style: solid;
         border-color: transparent transparent #ffffff transparent;
         width: 0;
