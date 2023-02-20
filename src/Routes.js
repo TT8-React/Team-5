@@ -5,6 +5,7 @@ import { AuthContext } from "./context"
 import SignUp from "./pages/SignUp"
 import LogIn from "./pages/LogIn"
 import CompanyDetails from "./pages/CompanyDetails"
+import ProfileDetails from "./pages/ProfileDetails"
 import PrivateRoute from "./PriveteRoutes"
 
 const MyRoutes = ()=>{
@@ -16,6 +17,7 @@ const MyRoutes = ()=>{
           <Route path="/Signup" element={isAuthenticated?<Navigate to='/Home' />:<SignUp />} />
           <Route path="/Home" element={<PrivateRoute/>}>
             <Route index element={<CompanyDetails/>} />
+            <Route path="ProfileDetails" element={<ProfileDetails/>} />
             <Route path="*" element={<PageNotFound/>} />
           </Route>
             <Route path="/*" element={<PageNotFound/>} />

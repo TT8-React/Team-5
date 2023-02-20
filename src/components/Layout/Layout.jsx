@@ -1,4 +1,4 @@
-import { StyledLayout } from "../../styled/styleComponent";
+import { StyledLayout } from "./styeld";
 import Header from "../Header";
 import SideBar from "../SideBar";
 
