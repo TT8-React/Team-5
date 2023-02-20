@@ -5,7 +5,6 @@ import Header from "../../components/Header";
 import { StyledTable } from "./style";
 import { StyledTableCon } from "./style";
 import { MainButton } from "../../styled/styleComponent";
-// import StyledTablecon from "./style";
 
 function Table() {
   return (
