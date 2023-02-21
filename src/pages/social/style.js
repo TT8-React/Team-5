@@ -3,9 +3,6 @@ import styled from "styled-components";
 export const StyledTableCon = styled.div`
   display: flex;
   width: 100vw;
-  .sc-iBYQkv{
-    height: 30vh
-  }
   .ccon{
     width:100%;
     display flex;
