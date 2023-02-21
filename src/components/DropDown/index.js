@@ -18,6 +18,8 @@ const Dropdown = (props) => {
         padding={props.padding}
         borderRadius={props.borderRadius}
       >
+    <DropdownStyle>
+      <div className="titleDropDown" onClick={toggle}>
         <h3>{props.title}</h3>
         <StyledArrow open={open} className="toggle">
           <SlArrowDown />
