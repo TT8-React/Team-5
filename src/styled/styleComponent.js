@@ -45,7 +45,3 @@ export const Title = styled.h2`
 export const DashCard = styled(SignCard)`
   border-color: #969696;
 `;
-export const StyledLayout = styled.div`
-  display: grid;
-  grid-template-columns: 270px 1fr;
-`;

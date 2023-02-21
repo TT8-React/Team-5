@@ -5,7 +5,6 @@ export const StyleHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  width: 80vw;
   height: 91px;
   background: #4f4f4f;
   h2 {
@@ -13,5 +12,6 @@ export const StyleHeader = styled.header`
     font-size: 23px;
     line-height: 28px;
     color: #ffffff;
+    margin-left: 26px;
   }
 `;
