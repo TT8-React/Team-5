@@ -5,7 +5,7 @@ import Logo from "../Logo";
 import { MainButton } from "../../styled/styleComponent";
 import { AuthContext } from "../../context";
 const SideBar = () => {
-  const [, setAuthenticated ] = useContext(AuthContext);
+  const [,setAuthenticated] = useContext(AuthContext);
   return (
     <StyleSideBar>
       <Logo body="LOGO HERE" />
@@ -13,7 +13,7 @@ const SideBar = () => {
         <li>Dashboard</li>
         <li>Company details</li>
         <li>
-          <Dropdown title="Report">
+          <Dropdown title="Report" width="200px" border="none" padding="0">
             <ul>
               <li>My Report</li>
             </ul>
@@ -21,7 +21,7 @@ const SideBar = () => {
         </li>
         <li>Data upload</li>
         <li>
-          <Dropdown title="Analytics">
+          <Dropdown title="Analytics" width="200px" border="none" padding="0">
             <ul>
               <li>Environment</li>
               <li>Social</li>
