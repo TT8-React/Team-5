@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { SlArrowDown } from "react-icons/sl";
-import { DropdownStyle, StyledArrow } from "./styled";
+import { DropdownStyle,StyledArrow, Title } from "./styled";
 
 const Dropdown = (props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -11,13 +11,20 @@ const Dropdown = (props) => {
     setOpen(!open);
   };
   return (
+    <DropdownStyle width={props.width}>
+      <Title
+        onClick={toggle}
+        border={props.border}
+        padding={props.padding}
+        borderRadius={props.borderRadius}
+      >
     <DropdownStyle>
       <div className="titleDropDown" onClick={toggle}>
         <h3>{props.title}</h3>
         <StyledArrow open={open} className="toggle">
           <SlArrowDown />
         </StyledArrow>
-      </div>
+      </Title>
       <div>{dropdownOpen && props.children}</div>
     </DropdownStyle>
   );

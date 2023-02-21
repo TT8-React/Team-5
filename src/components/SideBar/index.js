@@ -17,7 +17,7 @@ const SideBar = () => {
           <Link to="/">Company details</Link>
         </li>
         <li>
-          <Dropdown title="Report">
+          <Dropdown title="Report" width="200px" border="none" padding="0">
             <ul>
               <Link to="/Home/Report">
                 <li>Report</li>
@@ -30,7 +30,7 @@ const SideBar = () => {
         </li>
         <li>Data upload</li>
         <li>
-          <Dropdown title="Analytics">
+          <Dropdown title="Analytics" width="200px" border="none" padding="0">
             <ul>
               <li>
                 <Link to="/Home/Enviroment">Environment</Link>
