@@ -1,4 +1,3 @@
-// import React from "react";
 import styled from "styled-components";
 
 export const StyledTableCon = styled.div`
@@ -8,18 +7,20 @@ export const StyledTableCon = styled.div`
     height: 30vh
   }
   .ccon{
-    // width:100%;
+    width:100%;
     display flex;
     flex-direction: column;
     align-items: end;
 
     button{
       width: fit-content;
-
     }
     .pp{
       align-self: center;
       color: red;
+    }
+    .cTzEmf{
+      width:81.63vw;
     }
     .buttcon{
       display: flex;
@@ -58,7 +59,6 @@ export const StyledTableCon = styled.div`
           display: flex;
           flex-direction: column;
         justify-content: space-around;
-
           
         }
       }
