@@ -7,7 +7,6 @@ import LogIn from "./pages/LogIn";
 import CompanyDetails from "./pages/CompanyDetails";
 import ProfileDetails from "./pages/ProfileDetails";
 import PrivateRoute from "./PriveteRoutes";
-import Layout from "./components/Layout/Layout";
 import Report from "./pages/Report";
 import MyReport from "./pages/MyReport";
 
