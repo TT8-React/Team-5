@@ -12,7 +12,10 @@ const SideBar = () => {
       <Logo body="LOGO HERE" />
       <ul>
         <li>Dashboard</li>
-        <li>Company details</li>
+
+        <li>
+          <Link to="/">Company details</Link>
+        </li>
         <li>
           <Dropdown title="Report">
             <ul>
@@ -29,9 +32,15 @@ const SideBar = () => {
         <li>
           <Dropdown title="Analytics">
             <ul>
-              <li>Environment</li>
-              <li>Social</li>
-              <li>Governance</li>
+              <li>
+                <Link to="/Home/Enviroment">Environment</Link>
+              </li>
+              <li>
+                <Link to="/Home/Social">Social</Link>
+              </li>
+              <li>
+                <Link to="/Home/Governance">Governance</Link>
+              </li>
             </ul>
           </Dropdown>
         </li>

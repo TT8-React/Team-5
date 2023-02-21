@@ -11,8 +11,8 @@ const Dropdown = (props) => {
     setOpen(!open);
   };
   return (
-    <DropdownStyle onClick={toggle}>
-      <div className="titleDropDown">
+    <DropdownStyle>
+      <div className="titleDropDown" onClick={toggle}>
         <h3>{props.title}</h3>
         <StyledArrow open={open} className="toggle">
           <SlArrowDown />

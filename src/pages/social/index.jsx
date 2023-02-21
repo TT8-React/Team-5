@@ -14,7 +14,7 @@ function Social() {
         <SideBar />
 
         <div class="ccon">
-          <Header />
+          <Header title="Social" />
           <div class="buttcon">
             <div className="graph-con">
               <img src={Graph} className="graph" />

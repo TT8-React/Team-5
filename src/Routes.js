@@ -10,6 +10,11 @@ import PrivateRoute from "./PriveteRoutes";
 import Layout from "./components/Layout/Layout";
 import Report from "./pages/Report";
 import MyReport from "./pages/MyReport";
+import Customized from "./pages/CustomizedReport";
+import ImageInput from "./pages/dataUpload";
+import Governance from "./pages/Governance";
+import Envireoment from "./pages/Enviroment";
+import Social from "./pages/social";
 
 const MyRoutes = () => {
   const [isAuthenticated] = useContext(AuthContext);
@@ -29,6 +34,14 @@ const MyRoutes = () => {
         <Route path="ProfileDetails" element={<ProfileDetails />} />
         <Route path="Report" element={<Report />} />
         <Route path="MyReport" element={<MyReport />} />
+        <Route path="CustomizedReport" element={<Customized />} />
+        <Route path="DataUpload" element={<ImageInput />} />
+        <Route path="Governance" element={<Governance />} />
+        <Route path="Enviroment" element={<Envireoment />} />
+        <Route path="Social" element={<Social />} />
+
+        <Route path="Governance" element={<Governance />} />
+
         <Route path="*" element={<PageNotFound />} />
       </Route>
       <Route path="/*" element={<PageNotFound />} />
